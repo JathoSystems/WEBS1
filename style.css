@@ -1,13 +1,7 @@
-@font-face {
-    font-family: 'Poppins';
-    src: url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap);
-}
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
-    font-family: 'Poppins';
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -73,7 +67,6 @@ ul {
     opacity: 0;
     transition: transform 250ms ease-out, opacity 250ms ease-out, visibility 250ms ease-out;
     visibility: hidden;
-    z-index: 1;
 }
 
 @keyframes dropdown {
@@ -96,18 +89,6 @@ ul {
     transform: translateY(0);
     opacity: 100;
     visibility: visible;
-}
-
-.wave {
-    position: fixed;
-    top: 3.5rem;
-    width: 100%;
-    height: 6rem;
-}
-
-.wave * {
-    width: 100%;
-    height: 100%;
 }
 
 .pointer {
@@ -134,16 +115,17 @@ a li {
     padding: 1rem;
     text-decoration: none;
     color: var(--main-text);
+    width: calc(100% - 2rem);
 }
 
 button {
-    border: none;
+    border: 3px solid var(--accent);
     border-radius: 1rem;
     font-size: 1.5rem;
     padding: .5rem 1rem;
     background-color: var(--blauw1);
     color: var(--wit);
-    transition: color 200ms, background-color 200ms;
+    transition: 200ms;
 }
 
 button:hover {
@@ -176,6 +158,7 @@ footer {
     max-width: 1200px;
     min-height: 60vh;
 }
+
 .contactForm form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -184,7 +167,6 @@ footer {
 }
 
 input, textarea {
-    border: var(--accent) solid 2px;
     padding: .5rem 1rem;
     border-radius: 1rem;
 }
@@ -205,5 +187,33 @@ textarea {
 .sendForm {
     position: absolute;
     bottom: 1.5rem;
-    right: 2rem;
+}
+
+.overzichtGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 70vw;
+}
+
+.gridSection {
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-height: 25vh;
+    min-width: 10vw;
+    overflow: hidden;
+    transition: scale 200ms;
+}
+
+.gridSection:hover {
+    scale: 1.05;
+}
+
+.upperSection {
+    height: 45%;
+    overflow: hidden;
+}
+
+.lowerSection {
+    height: 55%;
 }
