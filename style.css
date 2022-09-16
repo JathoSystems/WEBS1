@@ -84,9 +84,9 @@ ul {
     background-color: var(--blauw2);
     border-radius: 1rem;
     width: 15ch;
-    transform: translateY(50%);
+    transform: translateY(10vh);
     opacity: 0;
-    transition: transform 250ms ease-out, opacity 250ms ease-out, visibility 250ms ease-out;
+    transition: all 250ms ease-in-out;
     visibility: hidden;
     z-index: 1;
 }
@@ -250,6 +250,35 @@ textarea {
     grid-auto-rows: 1fr
 }
 
+.card-top {
+    width: 100%;
+    min-height: 20%;
+    max-height: 50%;
+    object-fit: cover;
+
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow-x: hidden;
+    overflow-y: visible;
+    transition: scale 200ms;
+}
+
+.card-big {
+    border-radius: 1.5rem;
+    width: calc(100vw - 10rem);
+    max-width: 768px;
+}
+
+.card-content {
+    padding: 1rem;
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 1025px) {
     .grid-2-md {
         grid-template-columns: 1fr 1fr;
@@ -280,26 +309,8 @@ textarea {
         display: none;
     }
 
-}
+    .card-big {
+        width: 100vw;
+    }
 
-.card-top {
-    width: 100%;
-    min-height: 20%;
-    max-height: 50%;
-    object-fit: cover;
-
-}
-
-.card {
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow-x: hidden;
-    overflow-y: visible;
-    min-height: 20vh;
-    transition: scale 200ms;
-}
-
-.card-content {
-    padding: 1rem;
-    width: 100%;
 }
