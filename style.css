@@ -277,9 +277,9 @@ textarea {
 }
 
 .card-content {
-    padding: 1rem;
+    padding: 1.5rem 2rem;
     width: 100%;
-    max-width: 430px;
+    max-width: 768px;
     margin: 0 auto;
 }
 
@@ -288,8 +288,9 @@ textarea {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     padding: 1rem;
-    grid-auto-rows: 1fr;
-    width: 100%;
+    grid-auto-rows: 8rem;
+    width: 80%;
+    margin: 2rem auto;
 }
 
 .gallery-item {
@@ -300,6 +301,7 @@ textarea {
     cursor: pointer;
     height: 8rem;
     width: 100%;
+    cursor: zoom-in;
 }
 
 .gallery-item:focus,
@@ -308,10 +310,19 @@ textarea {
 .gallery-item:active,
 .gallery-item:target {
     scale: 2;
-    width: 200%;
+    width: fit-content;
+    height: fit-content;
     overflow: visible;
-    transform: translateX(-15%);
     transition: all 200ms;
+    box-shadow: none;
+}
+
+.gallery-item:focus img,
+.gallery-item:focus-visible img,
+.gallery-item:focus-within img,
+.gallery-item:active img,
+.gallery-item:target img {
+    scale: 2;
 }
 
 .gallery-item img {
@@ -325,6 +336,14 @@ textarea {
     .grid-2-md {
         grid-template-columns: 1fr 1fr;
     }
+
+    .gallery-item:focus img,
+    .gallery-item:focus-visible img,
+    .gallery-item:focus-within img,
+    .gallery-item:active img,
+    .gallery-item:target img {
+        scale: 1.5;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -334,6 +353,14 @@ textarea {
 
     .home-md {
         display: block;
+    }
+
+    .gallery-item:focus img,
+    .gallery-item:focus-visible img,
+    .gallery-item:focus-within img,
+    .gallery-item:active img,
+    .gallery-item:target img {
+        scale: 1;
     }
 }
 
