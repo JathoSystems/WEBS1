@@ -156,20 +156,7 @@ footer {
     background-color: var(--accent);
 }
 
-.contactForm {
-    position: relative;
-    background-color: var(--wit);
-    border-radius: 1.5rem;
-    padding: 1.5rem 2rem;
-    padding-bottom: 5.5rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: max-content;
-    min-width: 60ch;
-    max-width: 1200px;
-    min-height: 60vh;
-}
-
-.contactForm form {
+.contact-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -208,9 +195,8 @@ textarea {
     height: 100%;
 }
 
-.sendForm {
-    position: absolute;
-    bottom: 1.5rem;
+.form-send {
+    width: fit-content;
 }
 
 .overzichtGrid {
@@ -456,20 +442,29 @@ textarea {
     .card-big {
         width: 90vw;
     }
+
+    .wave {
+        display: none;
+    }
+    
+        header {
+            height: 7rem;
+        }
+
+        .contact-form {
+            grid-template-columns: 1fr;
+        }
+
+        .wide {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
 }
 
 @media screen and (max-width: 430px) {
 
     .grid-1-sm {
         grid-template-columns: 1fr;
-    }
-
-    header {
-        height: 7rem;
-    }
-
-    .wave {
-        display: none;
     }
 
     .card-big {
