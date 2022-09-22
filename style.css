@@ -323,7 +323,7 @@ textarea {
     height: 100%;
     overflow: hidden;
     position: relative;
-    background-image: url(/images/eendherkenning.jpg);
+    background-image: url("images/eendherkenning.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
