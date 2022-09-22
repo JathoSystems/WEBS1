@@ -331,6 +331,96 @@ textarea {
     object-fit: cover;
 }
 
+.duck-frame {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(/images/eendherkenning.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+
+.duck-recognition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    aspect-ratio: 1/1;
+    border: 5px solid red;
+    animation: herkenning 5s both infinite;
+}
+
+.duck-recognition-text {
+    background-color: lime;
+    width: fit-content;
+    color: var(--tekst);
+    animation: herkenning-color 5s both infinite
+}
+
+@keyframes herkenning {
+    0% {
+        left: 0;
+        border-color: red;
+    }
+    20% {
+        top: 20%;
+        left: 50%;
+        border-color: red;
+    }
+    40% {
+        top: 20%;
+        left: 50%;
+        border-color: lime;
+    }
+    50% {
+        border-color: red;
+    }
+    60% {
+        left: 5%;
+        top: 20%;
+        border-color: red;
+    }
+    85% {
+        border-color: lime;
+        top: 20%;
+        left: 5%;
+    }
+    100% {
+        border-color: red;
+        top: 0;
+    }
+
+}
+
+@keyframes herkenning-color {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
 
 @media screen and (max-width: 1025px) {
     .grid-2-md {
@@ -361,6 +451,10 @@ textarea {
     .gallery-item:active img,
     .gallery-item:target img {
         scale: 1;
+    }
+
+    .card-big {
+        width: 90vw;
     }
 }
 
