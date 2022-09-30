@@ -11,6 +11,16 @@
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 1rem;
+}
+
 :root {
     --blauw1: #16697A;
     --blauw2: #489FB5;
@@ -258,6 +268,15 @@ textarea {
     max-width: 768px;
 }
 
+.content-big {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    width: calc(100vw - 10rem);
+    max-width: 768px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
 .overflow {
     overflow: visible;
 }
@@ -352,29 +371,35 @@ textarea {
         left: 0;
         border-color: red;
     }
+
     20% {
         top: 20%;
         left: 50%;
         border-color: red;
     }
+
     40% {
         top: 20%;
         left: 50%;
         border-color: lime;
     }
+
     50% {
         border-color: red;
     }
+
     60% {
         left: 5%;
         top: 20%;
         border-color: red;
     }
+
     85% {
         border-color: lime;
         top: 20%;
         left: 5%;
     }
+
     100% {
         border-color: red;
         top: 0;
@@ -386,21 +411,27 @@ textarea {
     0% {
         opacity: 0;
     }
+
     20% {
         opacity: 0;
     }
+
     40% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     60% {
         opacity: 0;
     }
+
     85% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -446,19 +477,19 @@ textarea {
     .wave {
         display: none;
     }
-    
-        header {
-            height: 7rem;
-        }
 
-        .contact-form {
-            grid-template-columns: 1fr;
-        }
+    header {
+        height: 7rem;
+    }
 
-        .wide {
-            grid-column-start: 1;
-            grid-column-end: 2;
-        }
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    .wide {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 }
 
 @media screen and (max-width: 430px) {
