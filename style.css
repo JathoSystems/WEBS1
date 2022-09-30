@@ -366,6 +366,10 @@ textarea {
     animation: herkenning-color 5s both infinite
 }
 
+.radio-button {
+    background-color: var(--accent);
+}
+
 @keyframes herkenning {
     0% {
         left: 0;
