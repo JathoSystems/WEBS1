@@ -371,6 +371,14 @@ textarea {
     background-color: var(--accent);
 }
 
+.inline {
+    display: inline;
+}
+
+.duck:hover:after, .duck:hover:before {
+    content: "🦆";
+}
+
 @keyframes herkenning {
     0% {
         left: 0;
