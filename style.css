@@ -455,6 +455,7 @@ textarea {
 
 .title {
     color: var(--wit);
+    font-size: 300%;
 }
 
 @keyframes herkenning {
