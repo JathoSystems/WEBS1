@@ -196,6 +196,26 @@ footer {
     text-align: center;
 }
 
+.contact-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    background-color: var(--blauw1);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--wit);
+}
+
+.contact-item a {
+    color: var(--wit);
+}
+
 input,
 textarea {
     padding: .5rem 1rem;
@@ -397,7 +417,8 @@ textarea {
     display: inline;
 }
 
-.duck:hover:after, .duck:hover:before {
+.duck:hover:after,
+.duck:hover:before {
     content: "🦆";
 }
 
@@ -478,6 +499,7 @@ textarea {
         transform: translateY(50px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
