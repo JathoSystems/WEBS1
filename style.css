@@ -439,6 +439,11 @@ textarea {
     min-width: 100%;
 }
 
+.top-content {
+    display: flex;
+    justify-content: center;
+}
+
 .background {
     position: absolute;
     left: 0;
@@ -451,6 +456,14 @@ textarea {
     background-position: center;
     z-index: -1;
     filter: brightness(50%);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.border {
+    margin: 3px;
 }
 
 .title {
