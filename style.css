@@ -486,6 +486,11 @@ textarea {
     height: 40vh;
     width: 40vh;
     margin-right: 1rem;
+    border-radius: 5%;
+}
+
+.flex a {
+    color: black;
 }
 
 .center-text {
