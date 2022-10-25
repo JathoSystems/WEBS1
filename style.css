@@ -302,9 +302,9 @@ textarea {
 .card-top {
     width: 100%;
     min-height: 20%;
-    max-height: 50%;
+    height: max-content;
     object-fit: cover;
-
+    overflow: hidden;
 }
 
 .card {
@@ -318,7 +318,14 @@ textarea {
 .card-big {
     border-radius: 1.5rem;
     width: calc(100vw - 10rem);
-    max-width: 768px;
+    width: 768px;
+}
+
+.overzicht-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .content-big {
@@ -628,11 +635,11 @@ textarea {
     }
 
     .card-big {
-        width: 100vw;
+        width: 95vw;
     }
 
     .content-big {
-        width: 100vw;
+        width: 95vw;
     }
 
 }
