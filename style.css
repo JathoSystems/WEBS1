@@ -443,19 +443,17 @@ textarea {
     content: "🦆";
 }
 
-.home-grid {
-    position: absolute;
-    display: grid;
+.home {
+    position: relative;
     gap: 0;
     padding: 0;
-    top: 0;
-    grid-template-columns: 100%;
-    min-width: 100%;
+    top: -6rem;
+    min-width: calc(100vw - 16px);
 }   
 
 .home-top {
     top: 4rem;
-    padding-top: 12rem;
+    padding: 12rem 0 6rem;
     min-height: 75vh;
     min-width: 100%;
 }
