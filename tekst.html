@@ -81,20 +81,47 @@
         <article>
             <div class="card card-big card-content">
                 <h1 class="inline pointer">Huur formulier</h1>
-                <p>Mijn naam is <input class="" type="text" placeholder="Voornaam"> <input type="text" placeholder="Achternaam">
-                </p>
-                <p>Je kunt mij bereiken via <input type="email" placeholder="Mail"> en <input type="tel"
-                        placeholder="0123-567890"></p>
-                <p>Ik wil de eend(en) ontvangen bij <input type="text" placeholder="Eendstraat 1a"> in <input
-                        type="text" placeholder="Duckstad"></p>
-                <p>Ik wil graag <input type="number" min="1" max="20" placeholder="Max 20"> eend(en) huren voor <input
-                        type="number" min="0" max="72" placeholder="Max 72" step="0.25"> uur.</p>
-                <p>Ik wil de eend(en) ontvangen op <input type="date"> om <input type="time">.</p>
-                <p>Ik pinky promise dat ik zal betalen <input type="radio" name="pinky" class="radio-button">JA <input
-                        type="radio" name="pinky" class="radio-button">NEE <sup
-                        title="Geef aan het einde van de dag een envelop met geld aan een van de gehuurde eenden, deze brengt het naar ons 🦆"
-                        class="pointer"><b>?</b></sup></p>
-                <button class="form-send pointer">Verzenden</button>
+                <form class="huur-form">
+                    <p>
+                        <label>Mijn naam is </label>
+                        <input type="text" placeholder="Voornaam">
+                        <input type="text" placeholder="Achternaam">
+                    </p>
+                    <p>
+                        <label>Je kunt mij bereiken via</label> 
+                        <input type="email" placeholder="E-mail">
+                         en 
+                        <input type="tel" placeholder="Telefoonnummer">
+                    </p>
+                    <p>
+                        <label>Ik wil de eend(en) ontvangen bij </label>
+                        <input type="text" placeholder="Eendstraat 1a">
+                         in 
+                        <input type="text" placeholder="Duckstad">
+                    </p>
+                    <p>
+                        <label>Ik wil graag </label>
+                        <input type="number" min="1" max="20" placeholder="Max 20">
+                        eend(en) huren voor
+                        <input type="number" min="0" max="72" placeholder="Max 72" step="0.25">
+                         uur.
+                    </p>
+                    <p>
+                        <labek>Ik wil de eend(en) ontvangen op </labek>
+                        <input type="date"> om <input type="time">
+                    </p>
+                    <p>
+                        Ik pinky promise dat ik zal betalen 
+                        <input type="radio" name="pinky" class="radio-button">
+                         JA 
+                        <input type="radio" name="pinky" class="radio-button">
+                         NEE 
+                        <sup title="Geef aan het einde van de dag een envelop met geld aan een van de gehuurde eenden, deze brengt het naar ons 🦆" class="pointer">
+                            <b>?</b>
+                        </sup>
+                    </p>
+                    <button class="form-send pointer">Verzenden</button>
+                </form>
             </div>
         </article>
     </main>

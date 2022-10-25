@@ -21,6 +21,10 @@ p {
     margin-bottom: 1rem;
 }
 
+label {
+    display: block;
+}
+
 :root {
     --blauw1: #16697A;
     --blauw2: #489FB5;
@@ -187,6 +191,16 @@ footer {
     background-color: var(--accent);
     padding: 0.5rem 1rem;
     margin-top: 4rem;
+}
+
+.huur-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .contact-form {
