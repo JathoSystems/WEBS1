@@ -211,6 +211,12 @@ button:hover {
     color: var(--accent);
 }
 
+button:focus,
+button:focus-within,
+a:focus {
+    animation: button-click-bounce 300ms both ease-out;
+}
+
 footer {
     bottom: 0;
     width: 100%;
@@ -613,6 +619,21 @@ textarea {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@keyframes button-click-bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+    
 }
 
 @media screen and (max-width: 1600px) {
