@@ -439,6 +439,10 @@ textarea {
     display: inline;
 }
 
+.center-text {
+    text-align: center;
+}
+
 .duck:hover:after,
 .duck:hover:before {
     content: "🦆";
@@ -504,6 +508,26 @@ textarea {
 .title {
     color: var(--wit);
     font-size: 300%;
+}
+
+.portrait-t {
+    height: 50vh;
+    position: absolute;
+    left: 5vw;
+}
+
+.portrait-t img {
+    height: 50vh;
+}
+
+.portrait-j {
+    height: 50vh;
+    position: absolute;
+    right: 5vw;
+}
+
+.portrait-j img {
+    height: 50vh;
 }
 
 @keyframes herkenning {
@@ -656,6 +680,14 @@ textarea {
 
     .flex {
         display: block;
+    }
+
+    .portrait-t {
+        position: inherit;
+    }
+
+    .portrait-j {
+        position: inherit;
     }
 }
 
