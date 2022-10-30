@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Wie zijn wij? - Eend Lovers</title>
-    <link rel="icon" type="image/x-icon" href="/images/duck.ico">
+    <link rel="icon" type="image/x-icon" href="images/duck.ico">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             </span>
             <nav>
                 <a class="home-lg" href="index.html"><button class="pointer">Home</button></a>
-                <button id="menu" class="pointer">Menu</button>
+                <button class="menu-button pointer">Menu</button>
                 <div id="links">
                     <a href="index.html" class="home-md">
                         Home
@@ -35,12 +35,15 @@
                     <a href="imagegallery.html">
                         Image Gallery
                     </a>
-                    <a href="contact.html">
-                        Contact
-                    </a>
-                    <a href="wzw.html">
-                        Wie zijn wij
-                    </a>
+                    <button id="submenu" class="pointer">Over ons +</button>
+                    <div id="sublinks">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                        <a href="wzw.html">
+                            Wie zijn wij
+                        </a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -53,10 +56,17 @@
     </header>
 
     <main>
-        <img src="images/thomas-eend.png" class="portrait-t" alt="Thomas portrait">
-        <img src="images/jesper-eend.png" class="portrait-j" alt="Jesper portrait">
+        <div class="portrait-t">
+            <img src="images/thomas-eend.png"alt="Thomas portrait">
+            <h1>Thomas Versteeg</h1>
+
+        </div>
+        <div class="portrait-j">
+            <img src="images/jesper-eend.png" alt="Jesper portrait">
+            <h1>Jesper Vissers</h1>
+        </div>
         <article>
-            <div class="content-big center-text">
+            <div class="content-big">
                 <h1>Wie zijn wij?</h1>
                 <p>Wij zijn <span class="duck">Eend</span> Lovers, twee jonge mannen met een intense passie voor <span class="duck">eenden</span>. Wij specialiseren in het
                     verhuren van <span class="duck">eenden</span> voor evenementen zoals bedrijfsfeesten, verjaardagen en festivals. Wij begrijpen dat
